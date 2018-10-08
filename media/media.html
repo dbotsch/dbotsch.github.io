@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bling :: Media</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/bling.css" rel="stylesheet">
+<!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>   
+<![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+<header>
+    <h1>BLING COMPANY</h1>
+<meta name="description" content="Bling Company, a dance company team from Centrestage Dance Studio, a competitive dance studio in Scottsdale, Arizona.">
+</header>
+<nav>
+    <ul>
+        <li><a href="../index/index.html">Home</a></li> 
+        <li><a href="about.html">About</a></li>
+        <li><a href="../dancers/dancers.html">Dancers</a></li>
+            <li><a href="media.html">Media</a>
+            <ul>
+            <li><a href="lux.html">LUX</a></li>
+	        <li><a href="jazz.html">Jazz</a></li>
+	        </ul>
+	        </li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+        <li><a href="../schedule/schedule.html">Schedule</a></li>
+        <li><a href="../calendar/calendar.html">Calendar</a></li>
+    </ul>
+</nav>
+<main id="full">
+    <br>
+<h2>Media</h2>
+<p style="text-indent: 3em">
+   As the Bling Company grows throughout the year, the best way to show progress is to document it for all to see! Check out all the happenings of the Bling Company right here!<br> <br>
+   <a href="lux.html">2018 LUX In-House Convention</a> <br> <br>
+   <a href="jazz.html">Jazz Class: "Lose My Breath"</a>
+</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bling1.jpeg" style="width:80%">
+  <div class="text">"The Choir" Choreography Snack</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bling2.JPG" style="width:80%">
+  <div class="text">Passion Sleepover Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bling3.jpeg" style="width:80%">
+  <div class="text">Crazy Hair Day</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); 
+}
+</script>
+    <br>
+</main>
+<footer>
+<small><i>Copyright &copy; 2018 Centrestage Dance Studio</i></small><br>
+<small><i> <a style="color: #000000" href="mailto:darci@botsch.com">darci@botsch.com</a></i></small></footer>
+</div>
+</body>
+</html>
